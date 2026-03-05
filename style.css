@@ -42,3 +42,76 @@ aside{
     }
     
  }
+
+ @media only screen and (max-width: 450px){
+    body{
+        display: grid;
+        grid-template-areas:
+        "cabeca"
+        "braco"
+        "corpo"
+        "pe";
+        grid-template-rows: 100px 500px 100px;
+        grid-template-columns: auto;
+
+    }
+    aside{
+        display: none;
+
+    }
+    
+ }
+
+ .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    border: chartreuse 2px solid;
+    background-color: aqua;
+    width: 400px;
+    height: 650px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+ }
+
+ .imagem_produto{
+    width: 320px;
+
+ }
+
+ .d_produto{
+    color: azure;
+    font-size: xx-large;
+ }
+
+ .p_produto{
+    color: cornflowerblue;
+    font-size: 40px;
+
+ }
+
+ .botao_produto{
+    font-size: 30px;
+    background-color: rgb(21, 37, 37);
+    width: 50%;
+    text-decoration: none;
+    height: 50%;
+    border-radius: 20px;
+    
+ }
+
+ .letra_botao{
+    display: block;
+    color: darkorange;
+    text-decoration: none;
+
+ }
+
+ .mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
