@@ -4,7 +4,7 @@ body{
     "cabeca cabeca"
     "braco corpo"
     "pe pe";
-    grid-template-rows: 100px 500px 100px;
+    grid-template-rows: 100px auto 100px;
     grid-template-columns: 400px auto;
 
 }
@@ -20,20 +20,21 @@ aside{
     grid-area: braco; 
     
 }
- main{
+
+main{
     background-color: blue;
     grid-area: corpo;
- }
+}
 
- footer{
+footer{
     background-color: azure;
     grid-area: pe;
- }
- @media only screen and (max-width: 850px){
+}
+
+@media only screen and (max-width: 850px){
     body{
         display:grid;
         grid-template-areas:
-        "cabeca"
         "braco"
         "corpo"
         "pe";
@@ -41,9 +42,9 @@ aside{
         grid-template-columns: auto;
     }
     
- }
+}
 
- @media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px){
     body{
         display: grid;
         grid-template-areas:
@@ -60,9 +61,9 @@ aside{
 
     }
     
- }
+}
 
- .card{
+.card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -75,25 +76,28 @@ aside{
     border-radius: 10px;
     text-align: center;
     margin: 10px;
- }
+}
 
- .imagem_produto{
-    width: 320px;
+.imagens_cinza{
+    width: 320px
+}
 
- }
+.imagens_roxa{
+   width: 320px
+}
 
- .d_produto{
+.d_produto{
     color: azure;
     font-size: xx-large;
- }
+}
 
- .p_produto{
+.p_produto{
     color: cornflowerblue;
     font-size: 40px;
 
- }
+}
 
- .botao_produto{
+.botao_produto{
     font-size: 30px;
     background-color: rgb(21, 37, 37);
     width: 50%;
@@ -101,17 +105,17 @@ aside{
     height: 50%;
     border-radius: 20px;
     
- }
+}
 
- .letra_botao{
+.letra_botao{
     display: block;
     color: darkorange;
     text-decoration: none;
 
- }
+}
 
- .mae{
+.urso{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
- }
+}
